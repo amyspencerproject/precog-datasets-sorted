@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datasets Sorted Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Logo">
+        <img class="Logo-img" src="img/precog-logo.png" />
+      </div>
+      <div class="ButtonGroup">
+        <a class="Button button" href="#"
+          ><i class="Icon fas fa-table"></i>Load History</a
+        >
+        <button class="Button">
+          <i class="Icon fas fa-user-circle"></i>My subscription</button
+        ><button class="Button">
+          <i class="Icon fas fa-sign-out-alt"></i>Log out
+        </button>
+      </div>
+    </div>
+    <div class="Page">
+      <div class="Page">
+        <div class="PipelineAddDatasetsPage">
+          <div class="Container"><h1>Where does your data come from?</h1></div>
+          <div class="Container">
+            <div class="Group">
+              <a class="Button" href="index.html"
+                ><i class="Icon fas fa-arrow-left"></i>Back</a
+              >
+            </div>
+          </div>
+          <div class="Container">
+            <div class="KindList">
+              <form class="SearchFilter">
+                <i class="Icon fas fa-search SearchFilter-icon"></i
+                ><input class="Input SearchFilter-input" />
+              </form>
+              <p><strong>Sources already in the pipeline</strong></p>
+              <div class="BoxList">
+                <a class="Box" href="add-select-all-already.html">
+                  <div class="Box-group">
+                    <span class="Box-logo"
+                      ><i
+                        class="Icon fas fa-cloud Icon-logoPlaceholder"
+                      ></i></span
+                    ><span class="Box-title">Source A (Test)</span>
+                  </div></a
+                ><a class="Box" href="add-select-check-new-datasets.html">
+                  <div class="Box-group">
+                    <span class="Box-logo"
+                      ><div
+                        class="LogoIcon"
+                        style="
+                          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCEtLSBVcGxvYWRlZCB0bzogU1ZHIFJlcG8sIHd3dy5zdmdyZXBvLmNvbSwgR2VuZXJhdG9yOiBTVkcgUmVwbyBNaXhlciBUb29scyAtLT4KPHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgLTE0LjUgMjU2IDI1NiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCI+CiAgICA8Zz4KICAgICAgICA8cGF0aCBkPSJNMTYxLjgwMDY5MSw2Mi4xNTgyNjg2IEMxNzMuMzgxMjk1LDQyLjMzNjQyMjIgMTY2LjUwNTI0NiwxNy4wMDM3MjE1IDE0Ni40NDQ5MjQsNS41NTQ3ODc3OCBDMTI2LjM3NjE5NywtNS44Nzc4NjIzOSAxMDAuNzIyOTAzLDAuODk5NDM0MzQ0IDg5LjE0MjI5OTQsMjAuNzIxMjgwNyBDODguNjMxOTA1NCwyMS42MDkzNDg4IDg4LjE1MTgwMjQsMjIuNTE0NzUwOSA4Ny43MDI4NjU4LDIzLjQzNTU2MTIgTDQ4LjU1MjU4Myw5MC40MTA2MzMgQzQ3LjY4NjQwMTUsOTEuNzQyMDM0NyA0Ni44ODQ4MjkxLDkzLjExNDQwOCA0Ni4xNTA4NDIzLDk0LjUyMzAyNTMgTDUuNDk1MjkxMjIsMTY0LjY4MTEgTDc4LjE0NTQ1MzksMjA1LjQwMjMxIEwxMTguNTk1MjcyLDEzNS44MzYzOTggQzExOS40NzY2ODYsMTM0LjUxNDQ1MSAxMjAuMjc4Nzg0LDEzMy4xNDEyMDMgMTIwLjk5NjgzNywxMzEuNzI0MDA2IEwxNjAuMTQ3MTIsNjQuNzQwNzA0NiBDMTYwLjcxNDk0NCw2My45MDE4Mzc1IDE2MS4yODI1OTMsNjMuMDQ2NTExNyAxNjEuODAwNjkxLDYyLjE1ODI2ODYiIGZpbGw9IiNGQkJDMDQiPgoNPC9wYXRoPgogICAgICAgIDxwYXRoIGQ9Ik03OC40ODI4NTY3LDIwNS4xODg2OTggQzY2Ljk2ODA4ODMsMjI1LjMzMTMxMyA0MC45OTM4NDk1LDIzMi43NDE5MTkgMjEuMDQ4NTYzLDIyMS4xMjAzNDQgQzEuMDk1MDQ3MjMsMjA5LjQ5MDE5IC01Ljk4NjU1OTg4LDE4NC4yNzI3IDUuNTM2NDM3OTEsMTY0LjEzODMxNCBDMTcuMDU5NDM1NywxNDQuMDAzOTI3IDQyLjgwMzI1MzEsMTM2LjU2MDQwNSA2Mi43NTY3Njg4LDE0OC4xODIxNTQgQzgyLjcxMDI4NDYsMTU5LjgxMjEzNCA4OS45OTc0NTAxLDE4NS4wNTQxMzcgNzguNDgyNjgxNiwyMDUuMTgwNDY4IiBmaWxsPSIjMzRBODUzIj4KDTwvcGF0aD4KICAgICAgICA8cGF0aCBkPSJNMjM1LjI1Njk3OSw3NS40MTY3ODExIEMyMTUuNDI2MjAzLDYzLjk4ODE1OCAxOTAuMDg3MTk5LDcwLjc1NTk5OTggMTc4LjU5NTg5Myw5MC41NTA1MzE4IEwxMzcuMTE3NzU4LDE2Mi4yMjE5MjkgQzEyNS42OTAwMTEsMTgxLjk3NjAxNCAxMzIuNDM5ODE4LDIwNy4yNTM3MzYgMTUyLjE5MzkwMywyMTguNjgxNDg0IEMxNTIuMjI5NjIyLDIxOC43MDIxNDUgMTUyLjI2NTE2NiwyMTguNzIyNjMgMTUyLjMwMDg4NSwyMTguNzQzMTE2IEMxNzIuMTM1NTEzLDIzMC4xNzU5NDEgMTk3LjQ4MTUyMSwyMjMuNDAzNTQ3IDIwOC45NzAyLDIwMy42MDExMzYgTDI1MC40Mzk5MzEsMTMxLjkzNzk2OSBDMjYxLjg2NTkyNywxMTIuMTc3NzU1IDI1NS4xMDk4MTcsODYuODk2MTgwOSAyMzUuMzQ5NjAzLDc1LjQ3MDE4NDIgQzIzNS4zMTg3ODcsNzUuNDUyMzI0OCAyMzUuMjg3Nzk1LDc1LjQzNDQ2NTQgMjM1LjI1Njk3OSw3NS40MTY3ODExIiBmaWxsPSIjNDI4NUY0Ij4KDTwvcGF0aD4KICAgIDwvZz4KPC9zdmc+');
+                        "
+                      ></div></span
+                    ><span class="Box-title"
+                      >Spencer Project (Google AdSense)</span
+                    >
+                  </div>
+                </a>
+              </div>
+              <p><strong>Other sources </strong></p>
+              <div class="KindList-items">
+                <div class="BoxList">
+                  <button class="Box">
+                    <div class="Box-group">
+                      <span class="Box-logo"
+                        ><div
+                          class="LogoIcon"
+                          style="
+                            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA0OCI+PHBhdGggZmlsbD0iI2ZmOGMwMCIgZD0iTTExLjkyIDEySDBMNS41NSAwaDE4LjI5djQ4SDExLjkyWm00My43LTEySDI3LjgxdjEyaDIyLjI2TDMzLjM5IDQ4aDExLjkyTDY3LjU0IDBaIi8+PHBhdGggZmlsbD0iIzAwM2E5YiIgZD0iTTUyLjQ3IDQ4aDExLjFWMjQuMDRaIi8+PC9zdmc+');
+                          "
+                        ></div></span
+                      ><span class="Box-title">17Track</span>
+                    </div></button
+                  ><button class="Box">
+                    <div class="Box-group">
+                      <span class="Box-logo"
+                        ><div
+                          class="LogoIcon"
+                          style="
+                            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMC4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iTGF5ZXJfMSIKICAgeD0iMHB4IgogICB5PSIwcHgiCiAgIHZpZXdCb3g9IjAgMCA1NjAuOCA1NjAuOCIKICAgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMTkyMCA1NjAuODsiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIHNvZGlwb2RpOmRvY25hbWU9IjJwZXJmb3JtYW50LTIuc3ZnIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjMuMiAoMDkxZTIwZSwgMjAyMy0xMS0yNSkiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnMKICAgaWQ9ImRlZnM0NCIgLz48c29kaXBvZGk6bmFtZWR2aWV3CiAgIGlkPSJuYW1lZHZpZXc0NCIKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzAwMDAwMCIKICAgYm9yZGVyb3BhY2l0eT0iMC4yNSIKICAgaW5rc2NhcGU6c2hvd3BhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgIGlua3NjYXBlOnBhZ2VjaGVja2VyYm9hcmQ9IjAiCiAgIGlua3NjYXBlOmRlc2tjb2xvcj0iI2QxZDFkMSIKICAgaW5rc2NhcGU6em9vbT0iMC40MjA4Mjc0IgogICBpbmtzY2FwZTpjeD0iOTU4LjgyNTQiCiAgIGlua3NjYXBlOmN5PSIyODAuMzk5OTkiCiAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTMxMiIKICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNDQ5IgogICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgaW5rc2NhcGU6d2luZG93LXk9IjI1IgogICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIwIgogICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJMYXllcl8xIiAvPgo8c3R5bGUKICAgdHlwZT0idGV4dC9jc3MiCiAgIGlkPSJzdHlsZTEiPgoJLnN0MHtmaWxsOiNFQjIxMzU7fQoJLnN0MXtmaWxsOiNGRkZGRkY7fQo8L3N0eWxlPgo8ZwogICBpZD0iZzMiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDIuMjQ3MTUyNiwwLDAsMi4yMTcwNjU4LC0yODMuNjUzNzIsLTE3MC44NDQxMSkiPgoJCQkJPHBvbHlnb24KICAgY2xhc3M9InN0MCIKICAgcG9pbnRzPSIxNDEuNywyMDUuMSAzMDEuNywxMTIuNiAyNDguNCw4MS44IDE0MS43LDE0My40ICIKICAgaWQ9InBvbHlnb24xIiAvPgoJCQkJPHBvbHlnb24KICAgY2xhc3M9InN0MCIKICAgcG9pbnRzPSIzNTUuMSwyMDUuMSAyOTMsMTc5LjMgMTQxLjcsMjY2LjYgMjY1LjEsMjU3ICIKICAgaWQ9InBvbHlnb24yIiAvPgoJCQkJPHBvbHlnb24KICAgY2xhc3M9InN0MCIKICAgcG9pbnRzPSIyNTYuMSwxNDcuOSAzNTUuMSwyMDUuMSAzNTUuMSwxNDMuNSAzMDEuNywxMTIuNiAiCiAgIGlkPSJwb2x5Z29uMyIgLz4KCQkJCTxyZWN0CiAgIHg9IjE0MS43IgogICB5PSIyNjYuNjAwMDEiCiAgIGNsYXNzPSJzdDAiCiAgIHdpZHRoPSIyMTMuMzk5OTkiCiAgIGhlaWdodD0iNTMuNDAwMDAyIgogICBpZD0icmVjdDMiIC8+CgkJCTwvZz4KCjwvc3ZnPg');
+                          "
+                        ></div></span
+                      ><span class="Box-title">2Performant</span>
+                    </div></button
+                  ><button class="Box">
+                    <div class="Box-group">
+                      <span class="Box-logo"
+                        ><div
+                          class="LogoIcon"
+                          style="
+                            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MTEuNSIgaGVpZ2h0PSI0NTgiPjxwYXRoIGZpbGw9IiNGNzk0MzEiIGQ9Im0yNTUuNSAwIDI1NiA2MHYzMDlMMjY5IDQ1OCAwIDM4N1Y2MEwyNTUuNSAwek0yMiA3OHYyOTEuNWwyNDUuNSA2NUw0ODkgMzUyVjc3LjVMMjU2IDIzIDIyIDc4eiIvPjxwYXRoIGZpbGw9IiNGNzk0MzEiIGQ9Im00NCA5My41IDIxMS41LTUwTDQyNSA4NGwtMTMyLjUgNTFMNDYyIDEwMC41djIzMkwyNjIuNSA0MDNsLTIwMy01MyAxODQtMTY3IDIxIDE4OC41IDQtMjM2LTE4Ny0zMy41IDE0NiA1Ni41TDQ0IDMyMHoiLz48L3N2Zz4');
+                          "
+                        ></div></span
+                      ><span class="Box-title">3PL Central</span>
+                    </div></button
+                  ><button class="Box">
+                    <div class="Box-group">
+                      <span class="Box-logo"
+                        ><div
+                          class="LogoIcon"
+                          style="
+                            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIyMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iIzEzYmJiMiIgZD0iTTkuMDgyIDcuNjU3Yy44NDEuMTc2IDEuNjYuNTA1IDIuNDEzLjk5MUw5IDExLjYxM2gtLjAwMWEzLjM5NCAzLjM5NCAwIDAgMC00LjAwNi45QTMuMzY2IDMuMzY2IDAgMCAwIDQuOCAxNi42bC0yLjQ5NiAyLjk2NWE3LjE2NCA3LjE2NCAwIDAgMS0uMjM2LTkuNWw4LjM2OS05Ljk0IDIuOTI1IDIuNDQ3eiIvPjxwYXRoIGZpbGw9IiMxOTIyMzIiIGQ9Ik0xMy4xMDYgMTkuMjk4YTcuMjIgNy4yMiAwIDAgMS05LjQyNyAxLjQxOGwyLjQ5Ni0yLjk2NWEzLjM5NCAzLjM5NCAwIDAgMCA0LjAwNi0uODk5IDMuMzcgMy4zNyAwIDAgMCAuMTkyLTQuMDg4TDEyLjg3IDkuOGE3LjE2MyA3LjE2MyAwIDAgMSAuMjM2IDkuNU04MS4yMDggOC40NWguMTg1Yy4xMDUgMCAuMTg1LS4wMzIuMTg1LS4xNTUgMC0uMDg3LS4wMzctLjE0OC0uMTc5LS4xNDhoLS4xOTF6bS0uMjEuNTcxdi0xLjAzaC40MTNjLjIyMyAwIC4zOTYuMDg2LjM5Ni4yOTUgMCAuMTMtLjEwNS4yMTYtLjE4LjI0LjA3NS4wMjUuMTQ5LjEuMTQ5LjI3MSAwIC4wNjIgMCAuMTQyLjAxMi4yMjJoLS4yMWExIDEgMCAwIDEtLjAyNS0uMjE1YzAtLjEzNi0uMDMtLjE5Ny0uMTc5LS4xOTdoLS4xNjZ2LjQxMnptLS40MDItLjQ5OWMwIC40NTYuMzM0LjgzOC43OTcuODM4LjUgMCAuNzY2LS4zNy43NjYtLjgzIDAtLjQ2My0uMzA5LS44MzktLjc3Mi0uODM5LS41MjUgMC0uNzkxLjQxMy0uNzkxLjgzMW0xLjc4NSAwYzAgLjU2Ny0uMzk1IDEuMDM1LS45ODggMS4wMzUtLjU3NSAwLTEuMDA3LS40NDQtMS4wMDctMS4wMzUgMC0uNTY2LjQxNC0xLjAyOCAxLjAwNy0xLjAyOHMuOTg4LjQ3NC45ODggMS4wMjgiLz48L3N2Zz4');
+                          "
+                        ></div></span
+                      ><span class="Box-title">6Sense</span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
