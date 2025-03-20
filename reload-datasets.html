@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Datasets Sorted Mock-Up</title>
+    <link rel="stylesheet" type="text.css" href="./scss/normalize.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./scss/fonts.css" />
+    <link rel="stylesheet" href="./scss/fontawesome-all.css" />
+    <link rel="stylesheet" href="./scss/google.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <div class="Logo">
+        <a href="index.html"
+          ><img class="Logo-img" src="img/precog-logo.png"
+        /></a>
+      </div>
+      <div class="ButtonGroup">
+        <a class="Button button" href="#"
+          ><i class="Icon fas fa-table"></i>Load History</a
+        >
+        <button class="Button">
+          <i class="Icon fas fa-user-circle"></i>My subscription</button
+        ><button class="Button">
+          <i class="Icon fas fa-sign-out-alt"></i>Log out
+        </button>
+      </div>
+    </div>
+    <div class="Page">
+      <div class="PipelineReloadDatasetsPage">
+        <div class="Container">
+          <h1>Which datasets do you want to reload?</h1>
+        </div>
+        <div class="Container">
+          <div class="Group">
+            <a class="Button" href="index.html"
+              ><i class="Icon fas fa-arrow-left"></i>Back</a
+            >
+          </div>
+        </div>
+        <!-- <div class="Container">
+          <form class="SearchFilter">
+            <i
+              class="Icon fas fa-search SearchFilter-icon"
+              style="padding-top: 1rem"
+            ></i
+            ><input
+              class="Input SearchFilter-input"
+              placeholder="search both available and pending"
+            />
+          </form>
+        </div> -->
+        <div class="DatasetSelection">
+          <div class="DatasetSelection">
+            <div class="Container">
+              <h2>Available datasets</h2>
+              <!-- <p>
+                These datasets will be loaded into Snowflake at the first load
+                after historical data has been read into Precog.
+              </p> -->
+            </div>
+            <div class="Container">
+              <p><strong>Test</strong>, Source A</p>
+              <div class="DatasetSelection-buttons">
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button">
+                    <i class="Icon far fa-square"></i>Select all
+                  </button>
+                </div>
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button" disabled="">
+                    <i class="Icon fas fa-minus"></i>Remove selected datasets
+                  </button>
+                </div>
+              </div>
+              <form class="SearchFilter">
+                <i
+                  class="Icon fas fa-search SearchFilter-icon"
+                  style="padding-top: 1rem"
+                ></i
+                ><input
+                  class="Input SearchFilter-input"
+                  placeholder="search only available"
+                />
+              </form>
+              <div class="BoxList">
+                <li class="Box">
+                  <input class="Box-checkbox" type="checkbox" />
+                  <span class="Box-title">Simple</span
+                  ><span class="StatusLine"></span>
+                </li>
+                <li class="Box">
+                  <input class="Box-checkbox" type="checkbox" />
+                  <span class="Box-title">Simple</span
+                  ><span class="StatusLine"></span>
+                </li>
+                <li class="Box">
+                  <input class="Box-checkbox" type="checkbox" />
+                  <span class="Box-title">Simple</span
+                  ><span class="StatusLine"></span>
+                </li>
+              </div>
+              <div class="DatasetSelection-buttons">
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button">
+                    <i class="Icon far fa-square"></i>Select all
+                  </button>
+                </div>
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button" disabled="">
+                    <i class="Icon fas fa-minus"></i>Remove selected datasets
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="Container">
+              <h2>Pending datasets</h2>
+              <!-- <p>
+                These datasets will be loaded into Snowflake at the first load
+                after historical data has been read into Precog.
+              </p> -->
+            </div>
+            <div class="Container">
+              <p><strong>Test</strong>, Source A</p>
+              <div class="DatasetSelection-buttons">
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button">
+                    <i class="Icon far fa-square"></i>Select all
+                  </button>
+                </div>
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button" disabled="">
+                    <i class="Icon fas fa-minus"></i>Remove selected datasets
+                  </button>
+                </div>
+              </div>
+              <form class="SearchFilter">
+                <i
+                  class="Icon fas fa-search SearchFilter-icon"
+                  style="padding-top: 1rem"
+                ></i
+                ><input
+                  class="Input SearchFilter-input"
+                  placeholder="search only pending"
+                />
+              </form>
+              <div class="BoxList">
+                <li class="Box">
+                  <input class="Box-checkbox" type="checkbox" />
+                  <span class="Box-title">Simple</span
+                  ><span class="StatusLine"
+                    >Action required at
+                    <span
+                      class="TimestampDisplay"
+                      title="Mon, 17 Mar 2025 22:13:05 UTC"
+                      >Mon, 17 Mar 2025 16:13:05</span
+                    ></span
+                  >
+                  <div class="ButtonGroup Box-actions">
+                    <button class="Button" type="button">
+                      <i class="Icon fas fa-exclamation-triangle"></i>More info
+                    </button>
+                  </div>
+                </li>
+                <li class="Box">
+                  <input class="Box-checkbox" type="checkbox" />
+                  <span class="Box-title">Simple</span
+                  ><span class="StatusLine"
+                    >Action required at
+                    <span
+                      class="TimestampDisplay"
+                      title="Mon, 17 Mar 2025 22:13:05 UTC"
+                      >Mon, 17 Mar 2025 16:13:05</span
+                    ></span
+                  >
+                  <div class="ButtonGroup Box-actions">
+                    <button class="Button" type="button" disabled="">
+                      <i class="Icon fas fa-exclamation-triangle"></i>More info
+                    </button>
+                  </div>
+                </li>
+                <li class="Box">
+                  <input class="Box-checkbox" type="checkbox" />
+                  <span class="Box-title">Simple</span
+                  ><span class="StatusLine"
+                    >Processing at
+                    <span
+                      class="TimestampDisplay"
+                      title="Mon, 17 Mar 2025 22:13:05 UTC"
+                      >Mon, 17 Mar 2025 16:13:05</span
+                    ></span
+                  >
+                  <!-- <div class="ButtonGroup Box-actions">
+                    <button class="Button" type="button" disabled="">
+                      <i class="Icon fas fa-exclamation-triangle"></i>More info
+                    </button>
+                  </div> -->
+                </li>
+              </div>
+              <div class="DatasetSelection-buttons">
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button">
+                    <i class="Icon far fa-square"></i>Select all
+                  </button>
+                </div>
+                <div class="DatasetSelection-button">
+                  <button class="Button" type="button" disabled="">
+                    <i class="Icon fas fa-minus"></i>Remove selected datasets
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
